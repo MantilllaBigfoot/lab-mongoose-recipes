@@ -22,7 +22,7 @@ mongoose
     });
   })
   .then((recipe) => {
-    console.log(recipe);
+    console.log(recipe.title);
     return Recipe.insertMany(data);
   })
   .then((data) => {
